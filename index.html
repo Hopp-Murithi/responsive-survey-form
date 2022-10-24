@@ -6,6 +6,40 @@
     <title>Survey form</title>
   </head>
   <body>
+    <h1 id="title">freeVodeCamp survey form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <fieldset>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name"></label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email"></label>
+        <label id="number-label" for="number">Age:  <input id="number" type="number" min="23" max="120" placeholder="Age"></label>
+      
     
+        <label for="dropdown"> <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="dropdown"> 
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Freelancer</option>
+            <option value="3">Fulltime job</option>
+            <option value="4">Other</option>
+        </select>
+
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+       <label><input id="recommend"  name="recommend" type="radio" value="input-radio" class="inline" checked> "Definitely"</label> 
+       <label><input id="recommend"  name="recommend" type="radio" value="input-radio" class="inline"> "Maybe"</label> 
+       <label><input id="recommend"  name="recommend" type="radio" value="input-radio" class="inline"> "Not sure"</label> 
+     <p>What would you like to be improved?(select multiple if applicable)</p>
+     <label><input type="checkbox" class="inline"> Frontend</label>
+     <label><input type="checkbox" class="inline"> Backend</label>
+     <label><input type="checkbox" class="inline"> UX design</label>
+     <label><input type="checkbox" class="inline"> Database</label>
+
+     <p>Do you have any comments?</p>
+     <label for="comment">Provide a bio:
+      <textarea id="comment" name="bio" rows="3" cols="30" placeholder="Thank you freeCodeCamp..."></textarea>
+    </label>
+      </fieldset> 
+      <input id="submit" type="submit" value="Submit">
+    </form>
   </body>
 </html>
